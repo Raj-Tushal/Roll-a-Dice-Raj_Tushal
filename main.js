@@ -102,6 +102,7 @@ hold.addEventListener("click", () => {
         rightCurrentScore.innerHTML = 0;
         if (parseInt(rightTotalScore.innerHTML) >= 100) {
             left.style.background="linear-gradient(69.5deg, rgb(40, 48, 68) 2.3%, rgb(1, 179, 201) 97.6%)";
+            welcomeLeft.style.display = "block";
             alert("Second player wins!");
             resetGame();
         } else {
