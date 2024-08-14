@@ -297,7 +297,7 @@ img{
           font-weight: 600;
           margin-bottom: 120px;
           color: red;
-          /* display: none; */
+          display: none;
     }
     .welcomeLeft {
         height: 130px;
@@ -310,7 +310,7 @@ img{
         font-weight: 600;
         color: red;
         margin-bottom: 120px;
-        /* display: none; */
+        display: none;
       }
       .uperWale {
         height: 250px;
@@ -330,9 +330,7 @@ img{
         flex-direction: column;
         margin-bottom: 150px;
       }
-      .one{
-        display: block;
-      }
+      
       img {
         height: 13vh;
         display: none;
