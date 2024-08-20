@@ -298,6 +298,7 @@ img{
           margin-bottom: 120px;
           color: red;
           display: none;
+          margin-left: 50px;
     }
     .welcomeLeft {
         height: 130px;
@@ -311,6 +312,7 @@ img{
         color: red;
         margin-bottom: 120px;
         display: none;
+        text-align: center;
       }
       .uperWale {
         height: 250px;

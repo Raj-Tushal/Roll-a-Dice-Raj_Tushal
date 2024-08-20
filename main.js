@@ -5,7 +5,7 @@ const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const newGame = document.querySelector(".newGame")
 
-// restarting game
+// game restark karne liye
 newGame.addEventListener("click",()=>{
     location.reload();
 })
@@ -33,26 +33,26 @@ let currentPlayer = "first";
 
 function firstPlayer() {
     rollDice1.addEventListener("click", handleFirstPlayer);
-    rollDice2.removeEventListener("click", handleSecondPlayer); // Ensure second player can't roll during first player's turn
+    rollDice2.removeEventListener("click", handleSecondPlayer); 
 }
 
 function secondPlayer() {
     rollDice2.addEventListener("click", handleSecondPlayer);
-    rollDice1.removeEventListener("click", handleFirstPlayer); // Ensure first player can't roll during second player's turn
+    rollDice1.removeEventListener("click", handleFirstPlayer); 
 }
 
 function handleFirstPlayer() {
-    // Hide all images first
+    
     hideAllImages();
 
-    // Change background color
+
     left.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
     right.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
 
-    // Generate a random number between 1 and 6
+    
     const randomNumber = Math.floor(Math.random() * 6) + 1;
 
-    // Display the corresponding image and update the current score
+
     if (randomNumber == 1) {
         img1.style.display = "block";
         leftCurrentScore.innerHTML = 0;
@@ -64,17 +64,17 @@ function handleFirstPlayer() {
 }
 
 function handleSecondPlayer() {
-    // Hide all images first
+
     hideAllImages();
 
-    // Change background color
+    // Changing background color
     right.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
     left.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
 
-    // Generate a random number between 1 and 6
+
     const randomNumber = Math.floor(Math.random() * 6) + 1;
 
-    // Display the corresponding image and update the current score
+
     if (randomNumber == 1) {
         img1.style.display = "block";
         rightCurrentScore.innerHTML = 0;
@@ -164,4 +164,4 @@ function resetGame() {
     firstPlayer();
 }
 
-firstPlayer(); // Start with the first player's turn
+firstPlayer(); 
